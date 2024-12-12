@@ -1,0 +1,216 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding-top: 0; /* No padding at the top for better positioning */
+}
+
+/* Navbar Styles */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    padding: 10px 0;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative; /* Regular navbar positioning */
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease; /* Smooth transition for color */
+    width: 100vw; /* Ensure it covers the entire screen width */
+}
+
+nav button {
+    background-color: transparent;
+    border: none;
+    margin: 10px;
+    padding: 12px 25px;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+nav button:hover {
+    background-color: rgba(0, 123, 255, 0.2);
+    transform: scale(1.1);
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #f4f4f4;
+}
+
+/* Main content styling */
+main {
+    padding: 30px 10%;
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    main {
+        padding: 20px 5%;
+    }
+
+    nav button {
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 15px 0;
+    }
+
+    nav button {
+        margin: 10px 0;
+        padding: 10px 20px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav button {
+        padding: 6px 12px;
+        font-size: 1rem;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+
+    main {
+        padding: 15px 3%;
+    }
+}
+
+/* About Project Page Specific Styling */
+.about-project {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-project #h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-project .h2 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.about-project .ul {
+    list-style-type: disc;
+    margin-left: 30px;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.about-project .a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1.2rem;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.about-project .a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .about-project {
+        padding: 15px;
+        width: 90%;
+    }
+
+    .about-project .ul {
+        margin-left: 15px;
+    }
+}
+
+/* About, Skills, Contact Page Specific */
+#About,
+#Qualification,
+#Skills,
+#Contact {
+    margin-bottom: 40px;
+}
+
+.about-p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+ul li strong {
+    color: #007bff;
+    font-weight: bold;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
